@@ -1,0 +1,19 @@
+#mainnav {
+    display: inline-block;
+}
+
+#mainnav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#mainnav li a {
+    text-decoration: none;
+    background-color: cadetblue;
+    color: white;
+    padding: 5px;
+}
+
+#mainnav li a:hover {
+    background-color: rgb(51, 103, 105);
+}

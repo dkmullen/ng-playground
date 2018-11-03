@@ -1,0 +1,34 @@
+<div class="page-container">
+  <h2>Tabs & Tables Playground</h2>
+  <mat-tab-group>
+    <mat-tab label="First"> 
+      <div>
+          <ngx-datatable
+            class="material"
+            [rows]="rows"
+            [columns]="columns"
+            [rowHeight]="40">
+          </ngx-datatable>
+        </div>
+    </mat-tab>
+    <mat-tab label="Second">
+        <ngx-datatable
+        class="bootstrap"
+        [rows]="rows"
+        [columns]="columns"
+        [rowHeight]="40">
+      </ngx-datatable>
+    </mat-tab>
+    <mat-tab label="Third">
+        <ngx-datatable
+        class="dark"
+        [rows]="rows"
+        [columns]="columns"
+        [rowHeight]="40">
+      </ngx-datatable>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+<!-- Added only theme and row height to standard, out-of-the-box tables.
+  No column squishing so far. Maybe tables aren't wide enough to get squished?-->
