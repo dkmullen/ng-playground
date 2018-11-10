@@ -1,0 +1,56 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin-left: 400px;
+}
+.flex-container > div {
+    height: 450px;
+    width: 100%;
+    min-width: 350px;
+    border: 5px solid white;
+}
+
+.flex-container div:nth-child(odd) {
+    background: seagreen;
+}
+
+.flex-container div:nth-child(even) {
+    background: thistle;
+}
+
+@media screen and (min-width: 755px) {
+    .flex-container > div {
+        width: 98%;
+    }
+}
+
+@media screen and (min-width: 1155px) {
+    .flex-container > div {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1530px) {
+    .flex-container > div {
+        width: 31%;
+    }
+}
+
+@media screen and (min-width: 1880px) {
+    .flex-container > div {
+        width: 23%;
+    }
+}
+
+@media screen and (min-width: 2260px) {
+    .flex-container > div {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 2630px) {
+    .flex-container > div {
+        width: 12.28%;
+    }
+}

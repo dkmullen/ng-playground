@@ -1,3 +1,11 @@
 button {
     margin-right: 5px;
 }
+#a-now {
+    margin-top: 15px;
+}
+
+#a-now mat-radio-button {
+    display: block;
+    margin: 4px 0;
+}
