@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { Routes, RouterModule } from '@angular/router';
 
 import { MatButtonModule, MatCheckboxModule, MatTabsModule } from '@angular/material';
@@ -10,6 +11,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { CustomBreakPointsProvider } from './custom-breakpoints';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -37,6 +39,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    CommonModule,
     FlexLayoutModule,
     MatButtonModule,
     MatCheckboxModule,
@@ -48,7 +51,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
 
   ],
-  providers: [],
+  providers: [CustomBreakPointsProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
