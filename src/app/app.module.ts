@@ -4,9 +4,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MatButtonModule, MatCheckboxModule, MatTabsModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 
@@ -41,13 +43,16 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     CommonModule,
     FlexLayoutModule,
+    FormsModule,
     MatButtonModule,
     MatCheckboxModule,
     MatFormFieldModule,
+    MatInputModule,
     MatRadioModule,
     MatSelectModule,
     MatTabsModule,
     NgxDatatableModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
 
   ],

@@ -13,13 +13,27 @@
       <mat-radio-button value="clean">Mr. Clean</mat-radio-button>
     </mat-radio-group>
   </div>
+  
   <div>
-    <h4>Basic select</h4>
-    <mat-form-field>
-      <mat-select placeholder="Pick your favorite:">
-        <mat-option value="kurtz">Kurtz</mat-option>
-        <mat-option value="willard">Willard</mat-option>
-      </mat-select>
-    </mat-form-field>
+    <form class="example-form">  
+      <h4>Basic select</h4>
+      <mat-form-field>
+        <mat-select placeholder="Pick your favorite:">
+          <mat-option value="kurtz">Kurtz</mat-option>
+          <mat-option value="willard">Willard</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br />
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Email" [formControl]="emailFormControl">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </form>  
   </div>
+
 </div>
