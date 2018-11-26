@@ -9,6 +9,8 @@ import { MatButtonModule, MatCheckboxModule, MatTabsModule } from '@angular/mate
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material';
 
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { CustomBreakPointsProvider } from './custom-breakpoints';
@@ -19,12 +21,15 @@ import { PageoneComponent } from './pageone/pageone.component';
 import { PagetwoComponent } from './pagetwo/pagetwo.component';
 import { FlexboxComponent } from './flexbox/flexbox.component';
 import { FxflexComponent } from './fxflex/fxflex.component';
+import { MatTableComponent } from './mat-table/mat-table.component';
+import { DialogComponent } from './shared/dialog/dialog.component';
 
 const appRoutes: Routes = [
   { path: '', component: PageoneComponent },
   { path: 'p2', component: PagetwoComponent },
   { path: 'p3', component: FlexboxComponent },
-  { path: 'p4', component: FxflexComponent }
+  { path: 'p4', component: FxflexComponent },
+  { path: 'p5', component: MatTableComponent }
 ]
 
 @NgModule({
@@ -34,7 +39,9 @@ const appRoutes: Routes = [
     PagetwoComponent,
     NavComponent,
     FlexboxComponent,
-    FxflexComponent
+    FxflexComponent,
+    MatTableComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +54,8 @@ const appRoutes: Routes = [
     MatRadioModule,
     MatSelectModule,
     MatTabsModule,
+    MatTableModule,
+    MatSortModule,
     NgxDatatableModule,
     RouterModule.forRoot(appRoutes)
 

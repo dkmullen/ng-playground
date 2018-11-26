@@ -12,4 +12,8 @@ export class PageoneComponent implements OnInit {
   ngOnInit() {
   }
 
+  dialog() {
+    console.log('dialog')
+  }
+
 }
