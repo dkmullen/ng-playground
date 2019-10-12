@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutService } from '../layout.service'; 
 
 @Component({
   selector: 'app-flexbox',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlexboxComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public layout: LayoutService
+  ) {
+    this.layout.sendMessage.subscribe(() => 
+      alert('Got it')
+    )
+   }
 
   ngOnInit() {
   }

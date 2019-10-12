@@ -9,3 +9,10 @@ button {
     display: block;
     margin: 4px 0;
 }
+
+#me_msg {
+  opacity: .38;
+  position: relative;
+  top: 55px;
+  left: -1;
+}
